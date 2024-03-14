@@ -1,0 +1,62 @@
+.button {
+    &Pagination {
+        border: 2px solid var(--300-blue);
+        background-color: transparent;
+        padding: 1rem 3.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        align-self: stretch;
+        border-radius: 300px;
+        transition: all 0.3s ease;
+        opacity: 1;
+        color: var(--500-blue);
+
+        &:hover {
+            &:not(:disabled) {
+                border: 2px solid var(--300-blue);
+                background-color: var(--300-blue);
+                color: var(--000-blue);
+            }
+        }
+
+        &:disabled {
+            opacity: 0.9;
+            border: 2px solid var(--100-dark);
+            color: var(--200-dark);
+            cursor: not-allowed;
+
+            // &:hover {
+            //     opacity: 0.8;
+            //     border: 2px solid var(--100-dark);
+            //     color: var(--200-dark);
+            // }
+        }
+    }
+    &Name {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 600;
+        font-size: 1.25rem;
+        color: inherit;
+    }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 744px) {
+    .button {
+        &Pagination {
+        }
+        &Name {
+        }
+    }
+}
+
+@media only screen and (max-width: 743px) {
+    .button {
+        &Pagination {
+        }
+        &Name {
+        }
+    }
+}

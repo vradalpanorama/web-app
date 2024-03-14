@@ -1,0 +1,16 @@
+.icon {
+    &Container {
+        background: var(--snackbar__placeholder-icon--background);
+        display: flex;
+        width: 3.5rem;
+        height: 3.5rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+    }
+    &Explore {
+        color: white;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}

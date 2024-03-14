@@ -1,0 +1,33 @@
+.containerReadMorePreview {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--600-blue);
+
+    &Main {}
+
+    &Secondary {}
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 744px) {
+    .containerReadMorePreview {
+        &Main {
+        }
+        &Secondary {
+        }
+    }
+}
+
+@media only screen and (max-width: 743px) {
+    .containerReadMorePreview {
+        padding: 0 2rem;
+        &Main {
+        }
+        &Secondary {
+            grid-area: 3 / 1 / 4 / 3;
+            justify-content: flex-start;
+            padding-bottom: 0.5rem;
+            // align-items: flex-end;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.container {
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    bottom: -40%;
+    left: -40%;
+    opacity: 1;
+    transition: opacity .6s ease;
+
+
+    animation: 18s ease infinite alternate;
+
+    &Animation1 {
+        animation-name: loading1;
+    }
+    &Animation2 {
+        animation-name: loading2;
+    }
+    &Animation3 {
+        animation-name: loading3;
+    }
+    &Animation4 {
+        animation-name: loading4;
+    }
+    &Animation5 {
+        animation-name: loading5;
+    }
+
+    &Loaded {
+        opacity: 0;
+    }
+    
+
+    @keyframes loading1 {
+        0% {
+            rotate: 180deg;
+        }
+        100% {
+            rotate: -194deg;
+        }
+    }
+
+    @keyframes loading2 {
+        0% {
+            rotate: 20deg;
+        }
+        100% {
+            rotate: 270deg;
+        }
+    }
+
+    @keyframes loading3 {
+        0% {
+            rotate: 40deg;
+        }
+        100% {
+            rotate: -130deg;
+        }
+    }
+
+    @keyframes loading4 {
+        0% {
+            rotate: 13deg;
+        }
+        100% {
+            rotate: 194deg;
+        }
+    }
+
+    @keyframes loading5 {
+        0% {
+            rotate: -32deg;
+        }
+        100% {
+            rotate: 150deg;
+        }
+    }
+}

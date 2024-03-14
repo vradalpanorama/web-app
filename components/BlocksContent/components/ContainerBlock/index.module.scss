@@ -1,0 +1,53 @@
+.container {
+    &DesktopWidth30 {
+        width: 30%;
+    }
+    &DesktopWidth40 {
+        width: 40%;
+    }
+    &DesktopWidth50 {
+        width: 50%;
+    }
+    &DesktopWidth60 {
+        width: 60%;
+    }
+
+    &DesktopAlign {
+        &Top {
+            justify-content: flex-start;
+        }
+        &Center {
+            justify-content: center;
+        }
+        &Bottom {
+            justify-content: flex-end;
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 744px) {
+}
+
+@media only screen and (max-width: 743px) {
+    .container {
+        &DesktopWidth30,
+        &DesktopWidth40,
+        &DesktopWidth50,
+        &DesktopWidth60 {
+            width: 100%;
+        }
+        &DesktopAlign {
+            &Top,
+            &Center,
+            &Bottom {
+                justify-content: flex-start;
+            }
+        }
+        &MobileOrder1 {
+            order: 1;
+        }
+        &MobileOrder2 {
+            order: 2;
+        }
+    }
+}

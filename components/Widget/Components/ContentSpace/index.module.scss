@@ -1,0 +1,50 @@
+.contentSpace {
+    padding: 0.3rem;
+    position: relative;
+
+    &Left {
+        width: auto;
+        max-width: 45vw;
+        overflow-y: scroll;
+        display: flex;
+        gap: 0.3rem;
+        background: rgba(255, 255, 255, 0.7);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        border-radius: calc(0.3rem + var(--widget-border-radius)) 0 0
+            calc(0.3rem + var(--widget-border-radius));
+        padding-right: 1.25rem;
+        transition: width .3s ease;
+    }
+
+    &Right {
+        padding-left: 0.25rem;
+        background: rgb(255, 255, 255);
+        border-radius: 0 calc(0.3rem + var(--widget-border-radius))
+            calc(0.3rem + var(--widget-border-radius)) 0;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 1rem;
+            top: 0;
+            left: -1rem;
+            background: rgb(255, 255, 255);
+            clip-path: circle(250% at 1700% 50%);
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 744px) {
+    .contentSpace {
+        &Left {
+            max-width: 45vw;
+            overflow-y: scroll;
+        }
+    }
+}
+
+@media only screen and (max-width: 743px) {
+}

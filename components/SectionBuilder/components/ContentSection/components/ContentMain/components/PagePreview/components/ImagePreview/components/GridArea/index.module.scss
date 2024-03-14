@@ -1,0 +1,33 @@
+.gridArea {
+    display: flex;
+    border-radius: 4px;
+    overflow: hidden;
+
+    &Main {
+        grid-area: 1/1/4/3;
+    }
+    &Secondary {
+    }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 744px) {
+    .gridArea {
+        &Main {
+        }
+        &Secondary {
+        }
+    }
+}
+
+@media only screen and (max-width: 743px) {
+    .gridArea {
+        &Main {
+            margin: 0 2rem;
+        }
+        &Secondary {
+            padding-right: 2rem;
+            grid-area: 1 / 2 / 2 / 3;
+            min-width: 100px;
+        }
+    }
+}

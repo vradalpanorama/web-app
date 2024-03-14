@@ -1,0 +1,60 @@
+.feature {
+    &Placeholder {
+        display: flex;
+        padding: 1.5rem;
+        align-items: flex-start;
+        gap: 1.25rem;
+        align-self: stretch;
+    }
+
+    &Text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        align-self: stretch;
+        text-align: left;
+
+        &Title {
+            width: 16rem;
+            height: 1.25rem;
+            border-radius: 1rem;
+            background-color: var(--100-blue);
+            animation: loading-content 2s ease infinite;
+        }
+        &Lead {
+            width: 25rem;
+            height: 0.75rem;
+            border-radius: 1rem;
+            background-color: var(--100-blue);
+            animation: loading-content 2s ease infinite;
+        }
+    }
+    &Icon {
+        width: auto;
+        height: 3rem;
+
+        &Placeholder {
+            border-radius: 1rem;
+            background-color: var(--100-blue);
+            display: flex;
+            width: 4rem;
+            height: 4rem;
+            justify-content: center;
+            align-items: center;
+            animation: loading-content 2s ease infinite;
+        }
+    }
+
+    @keyframes loading-content {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}

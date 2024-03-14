@@ -1,0 +1,13 @@
+.arrow {
+    rotate: 180deg;
+    height: 1rem;
+    width: auto;
+}
+
+.button {
+    scale: 1;
+    transition: scale 0.1s;
+    &:active {
+        scale: 0.965;
+    }
+}

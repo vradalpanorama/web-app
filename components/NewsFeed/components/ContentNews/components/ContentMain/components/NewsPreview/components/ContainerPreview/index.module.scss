@@ -1,0 +1,41 @@
+.containerPreview {
+    &Main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr max-content max-content;
+        gap: 20px 24px;
+    }
+    &Secondary {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, max-content);
+        gap: 18px 12px;
+    }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 744px) {
+    .containerPreview {
+    }
+}
+
+@media only screen and (max-width: 743px) {
+    .containerPreview {
+        &Main {
+            display: flex;
+            flex-direction: column;
+            gap: 1.75rem;
+            padding-bottom: 3.25rem;
+            margin-bottom: 3.25rem;
+            border-bottom: 2px solid var(--100-blue);
+        }
+        &Secondary {
+            display: grid;
+            padding-bottom: 3.25rem;
+            margin-bottom: 3.25rem;
+            border-bottom: 2px solid var(--100-blue);
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto 1fr auto;
+        }
+    }
+}

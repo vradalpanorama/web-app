@@ -1,0 +1,15 @@
+.scroll {
+    overflow-x: hidden;
+    overflow-y: overlay;
+    height: 100%;
+}
+
+.container {
+    padding: 3.25rem 1.50rem 0;
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        padding: 5rem 3.25rem 0;
+    }
+}

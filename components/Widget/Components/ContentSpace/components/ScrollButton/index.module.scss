@@ -1,0 +1,40 @@
+.containerScrollButton {
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -2.5rem;
+    // margin: 1rem;
+    padding: 0.75rem;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 200px;
+    box-shadow: 0 0 4px 0 var(--000-dark);
+    // opacity: 0.9;
+    transition: all 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 0 8px 0 var(--100-dark);
+        .arrow {
+            opacity: 1;
+        }
+    }
+}
+
+.arrow {
+    height: 1rem;
+    width: 1rem;
+    opacity: 0.35;
+    transition: all 0.3s ease;
+
+    &Left{
+        rotate: 0deg;
+    }
+    &Right{
+        rotate: 180deg;
+    }
+}

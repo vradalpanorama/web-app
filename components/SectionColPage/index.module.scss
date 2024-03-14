@@ -1,0 +1,20 @@
+.sectionCol {
+}
+
+.container {
+    border-radius: 2px;
+    transition: border-radius 0.3s ease;
+
+    &Active {
+        // border-radius: var(--border-radius);
+    }
+
+    &IMG {
+        transform: scale(1);
+        transition: transform 0.3s ease;
+
+        &Active {
+            transform: scale(1.05);
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.mountains {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: -4px;
+    padding: 0;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 744px) {
+    .mountains {
+    }
+}
+
+@media only screen and (max-width: 743px) {
+    .mountains {
+        width: 125%;
+    }
+}

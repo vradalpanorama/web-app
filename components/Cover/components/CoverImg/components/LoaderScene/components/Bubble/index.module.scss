@@ -1,0 +1,19 @@
+.bubble {
+    position: absolute;
+    width: 186vh;
+    height: 170vh;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 744px) {
+    .bubble {
+        width: 145vh;
+        height: 130vh;
+    }
+}
+
+@media only screen and (max-width: 743px) {
+    .bubble {
+        width: 90vh;
+        height: 100vh;
+    }
+}

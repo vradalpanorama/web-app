@@ -1,0 +1,142 @@
+:root {
+    /* 1rem = 12px */
+    font-size: 12px;
+    
+    /* width content */
+    --width-content__desktop: 82rem;
+    --width-content__tablet: 60rem;
+    --width-content__mobile: 100%;
+    // --width-content__mobile: auto;
+
+    --white-color: rgb(255, 255, 255); // replaced "white"
+    --tmp-bg-color: rgb(246, 247, 248);
+
+    /* text */
+    --text-black: rgb(28, 30, 32);
+
+    /* main blue color pallete */
+    --000-blue: #f5fbff;
+    --100-blue: #e5f6ff;
+    --200-blue: #addbf6;
+    --300-blue: #58bbf5;
+    --400-blue: #34a9ed;
+    --500-blue: #1197e4;
+    --600-blue: #0b7ec1;
+    --700-blue: #0668a0;
+    --800-blue: #044e79;
+    --900-blue: #00273d;
+
+    /* main grey color pallete */
+    --000-dark: #f2f2f2;
+    --100-dark: #daddde;
+    --200-dark: #a0a7ab;
+    --300-dark: #717b84;
+    --400-dark: #46545b;
+    --500-dark: #243037;
+    --600-dark: #122028;
+    --700-dark: rgb(9, 22, 30);
+
+    /* status form color pallete */
+
+    --300-red: #FF807C;
+    --400-red: #FC605C;
+    --500-red: #DA2A25;
+
+    --300-green: #5CD86D;
+    --400-green: #34C648;
+    --500-green: #119C24;
+
+    --300-orange: #F57C14;
+    --400-orange: #F4923B;
+    --500-orange: #F8B071;
+
+    --300-yellow: #E0A710;
+    --400-yellow: #F4C03B;
+    --500-yellow: #F3CE70;
+
+    /* for animation tap */
+    --animation-tap__100: none;
+    --animation-tap__200: none;
+
+    /* banner pallete */
+    --banner__text-background--desktop: linear-gradient(90deg, #34A9ED 0%, #0B7DBF 100%);
+    --banner__text-background--mobile: linear-gradient(180deg, #34A9ED 0%, #0B7DBF 100%);
+
+    /* header pallete */
+    --header__nav-item--background-selected: #e5f6ff;
+    --header__nav-item--color-selected: #0b7dbf;
+
+    /* footer pallete */
+    --footer__content--background: linear-gradient(180deg, #1197e4 0%, #0b7dbf 100%);
+
+    /* on cover main */
+    --header__on-cover--color: white;
+    --header__on-cover--background: none;
+    --header__on-cover--backdrop-filter: none;
+
+    /* on content main */
+    --header__on-content--color: var(--text-black);
+    --header__on-content--background: rgba(255, 255, 255, 0.8);
+    --header__on-content--backdrop-filter: blur(50px) saturation(1.8);
+
+    /* modal pallete */
+    --modal-background-color: linear-gradient(180deg, #F5FBFF 0%, #E5F6FF 100%);
+    --toast__placeholder--background: linear-gradient(135deg, #58BBF5 0%, #0B7DBF 100%);
+
+    /* snackbar pallete */
+    --snackbar__placeholder-icon--background: linear-gradient(135deg, #58BBF5 0%, #0B7DBF 100%);
+    --snackbar__container--box-shadow-fixed: 0px 8px 20px 0px rgba(17, 151, 228, 0.25);
+    --snackbar__container--box-shadow-set: 0px 4px 20px 0px rgba(17, 151, 228, 0.1);
+
+    /* other */
+    --box-shadow: 0 8px 16px rgba(88, 187, 245, 0.2);
+    --border-radius: 10px;
+    --widget-border-radius: 24px;
+    --main-shift: 4.7rem;
+}
+
+html,
+body,
+button {
+    // font-family: 'Poppins', sans-serif;
+    color: var(--text-black);
+    font-size: 12px;
+
+    ::selection {
+        color: white;
+        background: var(--400-blue);
+    }
+}
+
+body {
+    position: relative;
+}
+
+button {
+    border: none;
+    box-shadow: none;
+}
+
+@media screen and (width > 1600px) {
+    html,
+    body,
+    button {
+        font-size: 14px;
+    }
+}
+
+@media screen and (width > 1000px) {
+    html,
+    body,
+    button {
+        font-size: 12px;
+    }
+}
+
+// @media only screen and (max-width: 1150px) {
+//     html,
+//     body,
+//     button {
+//         font-size: 12px;
+//     }
+// }

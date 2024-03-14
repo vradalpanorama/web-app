@@ -1,0 +1,40 @@
+.img {
+    &Content {
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        width: var(--width-content__desktop);
+        align-items: center;
+        justify-content: center;
+        // aspect-ratio: 16 / 6;
+        height: auto;
+        border-radius: 1.75rem;
+    }
+    &Description {
+        align-self: stretch;
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: var(--300-dark);
+        text-align: right;
+        margin-top: 1.2rem;
+        margin-right: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 744px) {
+    .img {
+        &Content {
+            width: var(--width-content__tablet);
+        }
+    }
+}
+
+@media only screen and (max-width: 743px) {
+    .img {
+        &Content {
+            width: 100%;
+            // border-radius: unset;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.value {
+    display: flex;
+    align-items: baseline;
+    gap: 0.1rem;
+
+    &Number {
+        min-height: 1.5rem;
+        font-weight: 400;
+        font-size: 1.875rem;
+        line-height: 1.875rem;
+        text-align: center;
+
+    }
+    &Unit {
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 0.75rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,29 @@
+.item {
+    font-weight: 400;
+    text-transform: none;
+    display: flex;
+    align-self: stretch;
+    border-radius: var(--border-radius);
+    color: var(--text-black);
+    scale: (1);
+    transition: scale .1s, color .2s ease, background-color .2s ease;
+
+    &:active {
+        scale: (0.965);
+    }
+    &:hover {
+        color: var(--600-blue);
+        background-color: var(--000-blue);
+    }
+    
+    &Link {
+        padding: 1rem;
+        padding-right: 1.5rem;
+        display: flex;
+        align-items: flex-start;
+        align-self: stretch;
+        width: 100%;
+        color: inherit;
+        cursor: pointer;
+    }
+}

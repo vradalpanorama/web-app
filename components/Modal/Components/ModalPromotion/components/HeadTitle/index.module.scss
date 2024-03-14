@@ -1,0 +1,22 @@
+.loading {
+    color: var(--300-blue);
+    animation: loading-title 2s ease infinite;
+
+    @keyframes loading-title {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.3;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+.error {
+    color: var(--400-blue);
+}
+.success {
+    color: var(--500-blue);
+}

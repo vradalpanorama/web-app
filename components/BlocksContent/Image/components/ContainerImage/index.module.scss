@@ -1,0 +1,42 @@
+.containerImage {
+    height: auto;
+    background-color: var(--000-blue);
+    overflow: hidden;
+    border-radius: 1.75rem;
+
+    &DesktopWidth30 {
+        width: 30%;
+    }
+    &DesktopWidth40 {
+        width: 40%;
+    }
+    &DesktopWidth50 {
+        width: 50%;
+    }
+    &DesktopWidth60 {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 744px) {
+}
+
+@media only screen and (max-width: 743px) {
+    .containerImage {
+        &DesktopWidth30,
+        &DesktopWidth40,
+        &DesktopWidth50,
+        &DesktopWidth60 {
+            width: 100%;
+        }
+        &MobileOrder {
+            &1 {
+                order: 1;
+            }
+
+            &2 {
+                order: 2;
+            }
+        }
+    }
+}
