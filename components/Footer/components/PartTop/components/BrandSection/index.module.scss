@@ -1,0 +1,43 @@
+.logotype {
+    &SunVradal {
+        width: 6.47819rem;
+        height: 6.4375rem;
+        flex-shrink: 0;
+    }
+    &VradalPanorama {
+        width: 13.09894rem;
+        height: 4.75906rem;
+        flex-shrink: 0;
+    }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 744px) {
+    .logotype {
+        &SunVradal {
+            width: 5.18rem;
+            height: 5.15rem;
+            flex-shrink: 0;
+        }
+        &VradalPanorama {
+            width: 10.47rem;
+            height: 3.8rem;
+            flex-shrink: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 743px) {
+    
+    .logotype {
+        &SunVradal {
+            width: 4.1rem;
+            height: 4.12rem;
+            flex-shrink: 0;
+        }
+        &VradalPanorama {
+            width: 8.7rem;
+            height: 3.25rem;
+            flex-shrink: 0;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.listNav {
+    position: absolute;
+    width: auto;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: flex-end;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding: 1.25rem 2rem;
+    background-color: transparent;
+    color: inherit;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    z-index: 410;
+
+    &OpenSideBar {
+        // width: 100%;
+        // background-color: #fff;
+    }
+}

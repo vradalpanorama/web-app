@@ -1,0 +1,18 @@
+.title {
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 125%;
+    color: white;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 744px) {
+    .title {
+        font-size: 2.75rem;
+    }
+}
+
+@media only screen and (max-width: 743px) {
+    .title {
+        font-size: 2.5rem;
+    }
+}

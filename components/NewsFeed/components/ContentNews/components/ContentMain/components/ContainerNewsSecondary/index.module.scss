@@ -1,0 +1,18 @@
+.containerNewsSecondary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 744px) {
+    .containerNewsSecondary {
+    }
+}
+
+@media only screen and (max-width: 743px) {
+    .containerNewsSecondary {
+        gap: 0.25rem;
+        display: flex;
+        flex-direction: column;
+    }
+}

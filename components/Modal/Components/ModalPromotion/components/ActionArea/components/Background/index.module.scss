@@ -1,0 +1,23 @@
+.background {
+    margin-top: 1rem;
+    position: sticky;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(229, 246, 255, 0) 0%, #e5f6ff 50%);
+    padding: 1rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+    .background {
+        margin-top: 2rem;
+        position: sticky;
+        bottom: 0;
+        background: linear-gradient(180deg, rgba(229, 246, 255, 0) 0%, #e5f6ff 50%);
+        padding: 1rem 2rem 2.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+}

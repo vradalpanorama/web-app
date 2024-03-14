@@ -1,0 +1,25 @@
+.link {
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    color: inherit;
+    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s ease ;
+
+    &:active {
+        box-shadow: inset 0 0 1px 100px
+            var(--header__nav-item--background-selected);
+    }
+
+    &:hover {
+        color: var(--header__nav-item--color-hover);
+        background-color: var(--header__nav-item--background-hover);
+    }
+
+    &Active {
+        background-color: var(--header__nav-item--background-selected);
+        color: var(--header__nav-item--color-selected);
+    }
+}

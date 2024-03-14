@@ -1,0 +1,49 @@
+.title {
+    &Small {
+        align-self: stretch;
+
+        font-size: 2.75rem;
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: 1px;
+        line-height: 120%;
+    }
+
+    &CallToAction {
+        font-size: 3.25rem;
+        font-weight: 600;
+        line-height: 125%;
+        font-style: normal;
+    }
+
+    &Section {
+        font-size: 4.5rem;
+
+        // color: var(--500, #1197E4);  ????
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%;
+    }
+
+    &SectionSpan {
+        color: var(--600-blue);
+        font-size: 1rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: normal;
+        
+        &White{
+            color: white;
+        }
+    }
+
+    &SectionMain {
+        color: white;
+        font-size: 5.5rem;
+        text-align: center;
+        letter-spacing: 0.5px;
+        font-weight: 500;
+        line-height: 125%;
+    }
+}

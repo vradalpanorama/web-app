@@ -1,0 +1,52 @@
+.logotype {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 20rem;
+    height: auto;
+    gap: 1rem;
+    transition: color 0.2s;
+
+    &:hover {
+        color: var(--200-blue);
+    }
+
+    &[title] {
+        &::after {
+            content: attr(title);
+            position: absolute;
+            right: 0;
+            bottom: -1rem;
+            color: var(--300-blue);
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        &:hover::after {
+            opacity: 1;
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 744px) {
+    .logotype {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 743px) {
+    .logotype {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        gap: 0.6rem;
+
+        &[title] {
+            &::after {
+                content: "";
+            }
+        }
+    }
+}

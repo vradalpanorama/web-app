@@ -1,0 +1,16 @@
+.socialNetwork {
+    display: flex;
+    color: currentColor;
+
+    &Icon {
+        min-width: 1rem;
+        max-width: 2.25rem;
+        height: 2.125rem;
+        color: white;
+        transition: color 0.3s;
+
+        &:hover {
+            color: var(--300-blue);
+        }
+    }
+}

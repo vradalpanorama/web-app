@@ -1,0 +1,20 @@
+.newsContent {
+    // width: calc(var(--width-content__desktop) - 20rem);
+    margin-top: calc(3rem - 1.25rem);
+    width: var(--width-content__desktop);
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 744px) {
+    .newsContent {
+        // width: calc(var(--width-content__tablet) - 14rem);
+        width: var(--width-content__tablet);
+    }
+}
+
+@media only screen and (max-width: 743px) {
+    .newsContent {
+        align-self: stretch;
+        width: var(--width-content__mobile);
+        padding: 0 2rem;
+    }
+}

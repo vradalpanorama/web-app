@@ -1,0 +1,20 @@
+.containerMain {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: var(--width-content__desktop);
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 744px) {
+    .containerMain {
+        width: var(--width-content__tablet);
+    }
+}
+
+@media only screen and (max-width: 743px) {
+    .containerMain {
+        gap: 0.25rem;
+        // width: 100%;
+        width: var(--width-content__mobile);
+    }
+}

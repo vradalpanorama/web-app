@@ -1,0 +1,10 @@
+.container {
+    font-weight: 400;
+    color: inherit;
+    transition: color 0.2s;
+    line-height: 130%;
+
+    &:hover {
+        color: var(--200-blue);
+    }
+}

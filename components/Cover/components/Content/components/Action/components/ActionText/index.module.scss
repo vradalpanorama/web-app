@@ -1,0 +1,40 @@
+.actionText {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: inherit;
+    // text-decoration: underline solid 2px hsla(0, 0%, 100%, 0.1);
+    text-underline-offset: 6px;
+    opacity: 0.75;
+    transition: text-decoration 0.3s ease, opacity 0.3s ease,
+        margin-left 0.3s ease;
+
+    &Decoration {
+        opacity: 1;
+        // text-decoration: underline solid 2px hsla(0, 0%, 100%, 0.6);
+
+        &OnHover {
+            opacity: 0.95;
+            // text-decoration: underline solid 2px hsla(0, 0%, 100%, 1);
+            // margin-left: 0.5rem;
+            background-clip: text;
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 744px) {
+    .actionText {
+        font-size: 1.35rem;
+    }
+}
+
+@media only screen and (max-width: 743px) {
+    .actionText {
+        width: fit-content;
+        display: flex;
+        font-size: 1.2rem;
+        line-height: 150%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,41 @@
+.snackbar {
+    &Init {
+        position: fixed;
+        bottom: 5rem;
+        right: -500px;
+        width: 32rem;
+        width: auto;
+        z-index: 100;
+        visibility: hidden;
+        // transition: all 3s ease;
+        opacity: 0;
+    }
+    &Show {
+        opacity: 1;
+        right: 5rem;
+        visibility: visible;
+    }
+}
+
+
+@media only screen and (max-width: 1100px) and (min-width: 744px) {
+}
+
+@media only screen and (max-width: 743px) {
+    .snackbar {
+        &Init {
+            position: fixed;
+            bottom: -80px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 85%;
+            z-index: 100;
+            visibility: hidden;
+            // transition: all .25s ease;
+        }
+        &Show {
+            bottom: 3rem;
+            visibility: visible;
+        }
+    }
+}

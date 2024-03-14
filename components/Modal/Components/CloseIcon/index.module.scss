@@ -1,0 +1,28 @@
+.close {
+    height: 2rem;
+    width: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    color: var(--200-dark);
+    transition: all 0.3s ease;
+    border-radius: 0.75rem;
+
+    &:hover {
+        background-color: var(--100-blue);
+        color: var(--400-dark);
+    }
+
+    &Icon {
+        height: 1.25rem;
+        width: 1.25rem;
+    }
+}

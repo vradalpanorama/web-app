@@ -1,0 +1,10 @@
+.imgContainer {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--100-blue);
+}

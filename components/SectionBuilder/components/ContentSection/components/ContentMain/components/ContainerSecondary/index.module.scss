@@ -1,0 +1,18 @@
+.ContainerSecondary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 744px) {
+    .ContainerSecondary {
+    }
+}
+
+@media only screen and (max-width: 743px) {
+    .ContainerSecondary {
+        gap: 0.25rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
