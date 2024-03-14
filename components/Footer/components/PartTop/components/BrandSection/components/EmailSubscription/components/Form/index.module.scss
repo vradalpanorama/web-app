@@ -1,0 +1,234 @@
+.form {
+    height: 4rem;
+    width: 100%;
+    // overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    border-radius: var(--border-radius);
+    box-sizing: content-box;
+    position: relative;
+}
+
+.placeholder {
+    cursor: text;
+    position: absolute;
+    padding: 0.5rem 0.9rem;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0.5rem;
+    color: var(--500-blue);
+    font-size: 1.125rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-style: normal;
+    transition: all 0.3s linear;
+
+    &Active {
+        color: #fff;
+        border-radius: 5px;
+        background-color: var(--400-blue);
+        font-size: 0.8rem;
+        font-weight: 400;
+        top: 0;
+        left: 0rem;
+    }
+    &Green {
+        background-color: var(--400-green);
+        color: #fff;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        font-weight: 400;
+        top: 0;
+        left: 0rem;
+    }
+    &Red {
+        background-color: var(--400-red);
+        color: #fff;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        font-weight: 400;
+        top: 0;
+        left: 0rem;
+    }
+    &Yellow {
+        background-color: var(--400-yellow);
+        color: #fff;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        font-weight: 400;
+        top: 0;
+        left: 0rem;
+    }
+    &Orange {
+        background-color: var(--400-orange);
+        color: #fff;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        font-weight: 400;
+        top: 0;
+        left: 0rem;
+    }
+}
+
+.input {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #fff;
+
+    // background: inherit;
+
+    padding: 1rem calc(1rem + 2px);
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    box-sizing: border-box;
+
+    transition: all .3s;
+
+    &Default {
+        color: white;
+        background: var(--300-blue);
+        border: solid 2px var(--400-blue);
+
+        &:focus {
+            color: white;
+            outline: none;
+            padding: 1rem;
+            background-color: var(--500-blue);
+        }
+    }
+
+    &Green {
+        color: #fff;
+        border: solid 2px var(--400-green);
+        // background: var(--300-green);
+        box-sizing: border-box;
+
+        &:focus {
+            color: white;
+            // background-color: var(--500-green);
+            outline: none;
+            padding: 1rem;
+        }
+    }
+    &Red {
+        color: white;
+        border: solid 2px var(--400-red);
+        // background: var(--300-red);
+
+        &:focus {
+            color: white;
+            outline: none;
+            padding: 1rem;
+
+            // background-color: var(--500-red);
+        }
+    }
+    &Yellow {
+        color: white;
+        border: solid 2px var(--400-yellow);
+        background: var(--300-yellow);
+
+        &:focus {
+            color: white;
+            outline: none;
+            padding: 1rem;
+
+            background-color: var(--500-yellow);
+        }
+    }
+    &Orange {
+        color: white;
+        border: solid 2px var(--400-orange);
+        background: var(--300-orange);
+
+        &:focus {
+            color: white;
+            outline: none;
+            padding: 1rem;
+            background-color: var(--500-orange);
+        }
+    }
+
+    &::placeholder {
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        color: var(--500-blue);
+        font-style: normal;
+    }
+
+    &:focus {
+        padding: 1rem;
+        color: white;
+        // background-color: var(--500-blue);
+        // border: solid 2px var(--300-blue);
+        outline: none;
+
+        &::placeholder {
+            color: var(--300-blue);
+        }
+    }
+}
+
+.button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    height: 100%;
+    background: var(--400-blue);
+    border-radius: 0px var(--border-radius) var(--border-radius) 0px;
+    width: 4rem;
+    height: 4rem;
+
+    transition: all 0.3s;
+    color: #fff;
+
+
+    &Green {
+        background-color: var(--400-green);
+    }
+    &Red {
+        background-color: var(--400-red);
+    }
+    &Yellow {
+        background-color: var(--400-yellow);
+    }
+    &Orange {
+        background-color: var(--400-orange);
+    }
+
+    &Arrow {
+        color: inherit;
+        width: 1rem;
+        height: 1rem;
+    }
+    
+    &Block {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+.spinnerLoader {
+    box-sizing: border-box;
+    border-top: solid 1.5px #fff;
+    border-right: solid 1.5px #fff;
+    border-bottom: solid 1.5px #fff;
+    border-left: solid 1.5px transparent;
+    border-radius: 100px;
+    width: 1.5rem;
+    height: 1.5rem;
+    animation: loading 2s ease infinite;
+
+    @keyframes loading {
+        from {
+            rotate: 0deg;
+        }
+        to {
+            rotate: 720deg;
+        }
+    }
+}

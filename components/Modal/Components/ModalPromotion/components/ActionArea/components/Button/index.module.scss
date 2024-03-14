@@ -1,0 +1,52 @@
+.button {
+    width: auto;
+    margin: 0.5rem auto 0;
+    padding: 1.5rem 2rem;
+    border-radius: var(--border-radius);
+    z-index: 999;
+
+    transition: all 0.3s ease;
+
+    &Loading {
+        width: 65%;
+        margin-bottom: 2rem;
+        height: 1.75rem;
+        z-index: 999;
+        animation: loading-btn 3s ease infinite;
+        transition: all 3s ease;
+
+        @keyframes loading-btn {
+            0% {
+                background-color: var(--200-blue);
+            }
+            50% {
+                background-color: var(--100-blue);
+            }
+            100% {
+                background-color: var(--200-blue);
+            }
+        }
+    }
+
+    &Active {
+        cursor: pointer;
+        font-size: 1.5rem;
+        font-weight: 500;
+        background-color: var(--500-blue);
+        color: white;
+
+        &:hover {
+            background-color: var(--400-blue);
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .button {
+        width: 75%;
+
+        &Loading {
+            width: 75%;
+        }
+    }
+}

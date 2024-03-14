@@ -1,0 +1,17 @@
+.containerMiniWidget {
+    display: flex;
+    width: calc(100vw - 4rem);
+    padding: 1.25rem 1rem;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 1.75rem;
+    margin: 0 auto;
+    height: auto;
+    background-color: #fff;
+    box-shadow: var(--snackbar__container--box-shadow-set);
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+    &Fixed {
+        box-shadow: var(--snackbar__container--box-shadow-fixed);
+    }
+}

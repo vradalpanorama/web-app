@@ -1,0 +1,20 @@
+.item {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    transition: color 0.3s, background-color 0.3s, scale 0.1s ;
+    color: inherit;
+    scale: 1;
+
+    &:active {
+        scale: 0.965;
+        color: var(--500-blue);
+        background: var(--100-blue);
+    }
+
+    &:hover {
+        color: var(--500-blue);
+        background: var(--100-blue);
+    }
+}

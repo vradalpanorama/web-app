@@ -1,0 +1,31 @@
+.pod {
+    position: absolute;
+    top: -80px;
+    right: 50%;
+    transform: translateX(50%);
+    min-width: 75%;
+    max-width: 80%;
+    padding: 1rem 1.25rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto 1fr;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+
+    border-radius: 60rem;
+    background: #fff;
+    box-shadow: 0px 4px 20px 0px rgba(17, 151, 228, 0.10);
+    transition: all .6s ease;
+
+    z-index: 999;
+    opacity: 1;
+    visibility: hidden;
+
+}
+
+@media screen and (min-width: 576px) {
+    .pod {
+        // width: 32rem;
+    }
+}

@@ -1,0 +1,26 @@
+.containerContentNews {
+    display: flex;
+    width: 100%;
+    padding: 4.5rem 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.75rem;
+    background-color: var(--000-blue);
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 744px) {
+    .containerContentNews {
+        padding: 3.75rem 0px;
+        gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 743px) {
+    .containerContentNews {
+        // align-items: flex-start;
+        padding: 2.5rem 0px;
+        gap: 1.75rem;
+        // width: var(--width-content__mobile);
+    }
+}

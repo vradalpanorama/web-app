@@ -1,0 +1,114 @@
+.content {
+    // width: 100%;
+    p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 150%;
+        margin-bottom: 1.4211em;
+        margin-top: 1.25rem;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    h2 {
+        margin-top: 2rem;
+        font-size: 4.75rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        line-height: 125%;
+    }
+
+    h3 {
+        margin-top: 2rem;
+        font-size: 4rem;
+        font-weight: 600;
+        letter-spacing: 0.011em;
+        line-height: 125%;
+    }
+
+    h5 {
+        margin-top: 2rem;
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: 0.011em;
+        line-height: 125%;
+    }
+
+    blockquote {
+        // box-sizing: border-box;
+        padding: 2rem 2.75rem;
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: var(--700-blue);
+        line-height: 160%;
+        font-style: italic;
+        border-left: solid 0.6rem var(--300-blue);
+        border-radius: 0.75rem 1.75rem 1.75rem 0.75rem;
+        background-color: var(--000-blue);
+    }
+    p,
+    em,
+    h2,
+    h3,
+    h5,
+    blockquote {
+        margin-top: calc(3rem - 1.25rem);
+        width: var(--width-content__desktop);
+        box-sizing: border-box;
+    }
+
+    // a {
+    //     color: var(--500-blue);
+    //     // transition: all 0.3s ease;
+
+    //     &:hover {
+    //         color: white;
+    //         background-color: var(--400-blue);
+    //     }
+    // }
+}
+
+.contentPage {
+    margin-top: calc(3rem - 1.25rem);
+    width: var(--width-content__desktop);
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 744px) {
+    .content {
+        p,
+        em,
+        h2,
+        h3,
+        h5,
+        blockquote {
+            margin-top: calc(3rem - 1.25rem);
+            width: var(--width-content__tablet);
+        }
+    }
+    .contentPage {
+        width: var(--width-content__tablet);
+    }
+}
+
+@media only screen and (max-width: 743px) {
+    .content {
+        p,
+        em,
+        h2,
+        h3,
+        h5,
+        blockquote {
+            align-self: stretch;
+            width: var(--width-content__mobile);
+            padding: 0 2rem;
+        }
+    }
+    .contentPage {
+        align-self: stretch;
+        width: var(--width-content__mobile);
+        padding: 0 2rem;
+    }
+}

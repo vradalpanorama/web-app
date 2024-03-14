@@ -1,0 +1,23 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    width: 100%;
+    padding-top: 2.5rem;
+    padding-bottom: 3.75rem;
+    
+    background: var(--footer__content--background);
+    z-index: 2;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 744px) {}
+
+@media only screen and (max-width: 743px) {
+    .content {
+        gap: 4rem;
+        padding-top: 2rem;
+        padding-bottom: 1.5rem;
+    }
+}

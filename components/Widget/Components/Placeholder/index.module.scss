@@ -1,0 +1,10 @@
+.placeholder {
+    height: 124px;
+}
+@media only screen and (max-width: 1100px) and (min-width: 744px) {}
+
+@media only screen and (max-width: 743px) {
+    .placeholder {
+        height: 78px;
+    }
+}

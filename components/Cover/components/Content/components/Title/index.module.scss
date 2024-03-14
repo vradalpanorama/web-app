@@ -1,0 +1,21 @@
+.title {
+    color: inherit;
+    font-size: 4.75rem;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    line-height: 125%;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 744px) {
+    .title {
+        font-size: 3.75rem;
+    }
+}
+
+@media only screen and (max-width: 743px) {
+    .title {
+        font-size: 3rem;
+        // line-height: 115%;
+    }
+}

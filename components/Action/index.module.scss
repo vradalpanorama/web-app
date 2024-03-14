@@ -1,0 +1,21 @@
+.action {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    gap: 1rem;
+    cursor: pointer;
+    transition: all .3s;
+
+    font-size: 1.75rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    &Icon {
+        height: 1.75rem;
+        width: auto;
+        color: inherit;
+    }
+}

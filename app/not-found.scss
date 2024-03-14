@@ -1,0 +1,239 @@
+.notFound {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: #0b7dbf;
+    overflow: hidden;
+
+    &Logo {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        color: inherit;
+        position: absolute;
+        top: 1.8rem;
+        left: 4rem;
+        z-index: 10;
+
+        &:visited {
+            color: inherit;
+        }
+
+        &:active {
+            color: inherit;
+        }
+
+        &Sun {
+            width: 3.25rem;
+            height: 3.25rem;
+        }
+
+        &VradalPanorama {
+            width: 6.5rem;
+            height: 2.25rem;
+        }
+    }
+
+    &Container {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 80%;
+        height: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+
+    &Title {
+        align-self: stretch;
+        color: #fff;
+        text-align: center;
+        font-size: 6.25rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 90%; /* 90% */
+        letter-spacing: 2px;
+        margin-bottom: 1.8rem;
+    }
+
+    &404 {
+        background: url(../public/icons/status-code/404.svg) no-repeat center
+            center;
+        width: 60rem;
+        height: 20rem;
+        background-size: contain;
+        flex-shrink: 0;
+        margin: 4rem 0;
+    }
+
+    &Link {
+        margin-top: 3rem;
+        display: flex;
+        gap: 0.75rem;
+        padding: 1.5rem 2.25rem;
+        border-radius: 300px;
+        font-size: 1.75rem;
+        border: solid 2px var(--400-blue);
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        color: #ffffff;
+        font-size: 1.75rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.0625rem;
+
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: var(--400-blue);
+            border: solid 2px var(--500-blue);
+        }
+
+        &Arrow {
+            width: auto;
+            height: 1.25rem;
+        }
+    }
+    p, a {
+        color: #ffffff;
+        font-size: 1.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.0625rem;
+
+        &:visited {
+            color: #ffffff;
+        }
+    }
+}
+.layer {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    &Mountains {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 15%;
+        z-index: 1;
+    }
+}
+
+html,
+body {
+    font-size: 12px;
+
+    ::selection {
+        color: white;
+        background: var(--400-blue);
+    }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 744px) {
+    .notFound {
+        &Logo {
+            top: 1.5rem;
+            left: 2rem;
+            gap: 0.6rem;
+
+            &Sun {
+                width: 2.75rem;
+                height: 2.75rem;
+            }
+            &VradalPanorama {
+                width: auto;
+                height: 2rem;
+            }
+        }
+        &404 {
+            width: 40rem;
+            height: 20rem;
+            margin: 3.25rem 0;
+        }
+    }
+
+    .layer {
+        position: absolute;
+        top: 20%;
+        width: 100%;
+        &Mountains {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 15%;
+            z-index: 1;
+        }
+    }
+}
+@media only screen and (max-width: 743px) {
+    .notFound {
+        &Logo {
+            top: 1.5rem;
+            left: 2rem;
+            gap: 0.6rem;
+
+            &Sun {
+                width: 2.75rem;
+                height: 2.75rem;
+            }
+            &VradalPanorama {
+                width: auto;
+                height: 2rem;
+            }
+        }
+        &404 {
+            width: 100%;
+            height: 14rem;
+            margin: 1.75rem 0;
+        }
+
+        &Title {
+            font-size: 4rem;
+            font-weight: 500;
+            line-height: 90%; /* 90% */
+            letter-spacing: 2px;
+        }
+        &Container {
+            width: 90%;
+        }
+        p,
+        a {
+            text-align: center;
+            font-size: 1.25rem;
+            letter-spacing: 1px;
+        }
+
+        &Link {
+            &Arrow {
+                width: auto;
+                height: 1rem;
+            }
+        }
+    }
+
+    .layer {
+        position: absolute;
+        top: 12%;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        &Mountains {
+            width: 200%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            // left: 0;
+            // right: 0;
+            z-index: 1;
+        }
+    }
+}

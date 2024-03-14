@@ -1,0 +1,27 @@
+.readMore {
+    user-select: none;
+    display: flex;
+    padding: 0.7rem 0;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    transition: gap 0.3s ease;
+
+    &Color {
+        color: var(--600-blue);
+        &White {
+            color: white;
+        }
+    }
+
+    &Arrow {
+        height: 1rem;
+    }
+
+    &:hover,
+    &Active {
+        gap: 0.8rem;
+    }
+}

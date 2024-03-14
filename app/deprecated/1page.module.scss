@@ -1,0 +1,9 @@
+.newsContent {
+    &Title {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-self: stretch;
+        color: var(--500-blue);
+    }
+}

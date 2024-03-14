@@ -1,0 +1,17 @@
+.skeletonValue {
+    width: 3.5rem;
+    height: 1.75rem;
+    border-radius: 4px;
+    background-color: var(--100-dark);
+    animation: load 2s ease infinite alternate;
+}
+
+@keyframes load {
+    from {
+        opacity: .2;
+    }
+
+    to {
+        opacity: .5;
+    }
+}

@@ -1,0 +1,37 @@
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 9rem;
+    left: 0;
+    right: 0;
+    gap: 1.25rem;
+    z-index: 10;
+    color: #fff;
+    user-select: none;
+    &WithAction {
+        opacity: 1;
+        transition: opacity 0.3s;
+
+        &:hover {
+            opacity: 0.95;
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 744px) {
+    .container {
+        top: 7.25rem;
+        gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 743px) {
+    .container {
+        padding: 0 3rem;
+        top: 10vh;
+        gap: 1rem;
+    }
+}

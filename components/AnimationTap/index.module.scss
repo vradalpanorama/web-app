@@ -1,0 +1,27 @@
+.animation {
+    height: auto;
+    width: auto;
+    display: flex;
+    box-sizing: border-box;
+    border: solid 1px transparent;
+    border-radius: var(--border-radius);
+    color: inherit;
+}
+.onDown {
+    background: var(--animation-tap__100);
+    border: solid 1px transparent;
+}
+.onUp {
+    animation: up 0.6s ease 1;
+
+    @keyframes up {
+        from {
+            background: var(--animation-tap__100);
+            border: solid 1px var(--animation-tap__200);
+        }
+        to {
+            background: transparent;
+            border: solid 1px transparent;
+        }
+    }
+}

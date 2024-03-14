@@ -1,0 +1,1 @@
+export {default as PromotionElement} from './PromotionElement';

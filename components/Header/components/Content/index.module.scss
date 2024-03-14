@@ -1,0 +1,12 @@
+.headerContent {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 1.8rem 4rem;
+    align-items: center;
+}
+
+@media screen and (max-width: 1110px) {
+    .headerContent {
+        padding: 1.5rem 2rem;
+    }
+}

@@ -1,0 +1,94 @@
+.privat {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+
+    &Text {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    &Pricing {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.5rem; //???
+
+        &Price {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+            align-self: stretch;
+            flex-wrap: wrap;
+        }
+
+        &Category {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem; // ????
+            align-self: stretch;
+            &Container {
+                display: flex;
+                // flex-direction: column;
+                align-items: flex-start;
+                align-self: stretch;
+                justify-content: space-between;
+                background-color: var(--000-blue);
+                border-radius: calc(var(--border-radius) + 0.3rem);
+                padding: 0.3rem;
+            }
+
+            &Button {
+                width: 24%;
+                border-radius: var(--border-radius);
+                display: flex;
+                // padding: 0.25rem 0.5rem; // ????
+                padding: 0.5rem 1rem;
+                align-items: center; // ???
+                justify-content: center;
+                cursor: pointer;
+
+                // Typography
+                background-color: transparent;
+                color: var(--500-blue);
+                font-size: 1.25rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 190%;
+                text-transform: capitalize;
+                transition: all .3s ease;
+
+                &Active {
+                    background-color: var(--500-blue);
+                    color: white;
+                    font-weight: 500;
+                    cursor: default;
+                }
+
+                &:hover:not(&Active) {
+                    background-color: var(--100-blue);
+                    color: var(--700-blue)
+                }
+            }
+
+            &Info {
+                margin-left: 1rem;
+                padding: 0.5rem 0;
+                color: var(--200-dark);
+                text-align: center;
+                font-size: 1.125rem; // ????
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.status500 {
+    margin-top: 0.75rem;
+    width: 80%;
+    height: auto;
+}
+
+.paragraph {
+    color: var(--400-blue);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+
+    &Container {
+        margin-top: 1.5rem;
+        margin-bottom: 10rem;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .status500 {
+        margin-top: 0.75rem;
+        width: 28rem;
+        height: auto;
+    }
+
+    .paragraph {
+        color: var(--400-blue);
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+    
+        &Container {
+            margin-top: 3rem;
+        }
+    }
+}

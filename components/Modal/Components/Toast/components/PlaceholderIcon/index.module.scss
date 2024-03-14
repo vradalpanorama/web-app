@@ -1,0 +1,68 @@
+.placeholder {
+    display: flex;
+    width: 4.25rem;
+    height: 4.25rem;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 75rem;
+    transition: all 0.3s ease;
+    &Label {
+        // background: var(--100-blue);
+        background: var(--toast__placeholder--background);
+    }
+
+    &Action {
+        background: transparent;
+
+        &:active {
+            background-color: rgba(242, 242, 242, 0);
+            animation: tap 0.5s ease 1;
+
+            @keyframes tap {
+                0% {
+                    background-color: rgba(242, 242, 242, 0);
+                }
+                50% {
+                    background-color: rgba(242, 242, 242, 1);
+                }
+                100% {
+                    background-color: rgba(242, 242, 242, 0);
+                }
+            }
+        }
+    }
+}
+
+.icon {
+    &Label {
+        min-width: 1.75rem;
+        max-width: 2rem;
+        min-height: 1.75rem;
+        max-height: 2rem;
+        color: white;
+    }
+    &Action {
+        min-width: 1.5rem;
+        max-width: 1.75rem;
+        min-height: 1.5rem;
+        max-height: 1.75rem;
+        color: var(--200-dark);
+
+        &Appearance {
+            animation: appearance;
+            animation-iteration-count: 1;
+            animation-timing-function: ease;
+            animation-duration: 0.3s;
+
+            @keyframes appearance {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

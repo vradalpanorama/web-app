@@ -1,0 +1,9 @@
+.container {
+    &Error {
+        background: transparent;
+    }
+    &Content {
+        border: solid 1px var(--100-blue);
+        background: #fff;
+    }
+}

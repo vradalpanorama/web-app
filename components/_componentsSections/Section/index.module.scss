@@ -1,0 +1,12 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    &Gap {
+        margin-bottom: 10rem;
+        &Mountains {
+            margin-bottom: 6rem;
+        }
+    }
+}

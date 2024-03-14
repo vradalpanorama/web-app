@@ -1,0 +1,840 @@
+{
+    "menuNavigation": {
+        "main-part": [
+            {
+                "id": 0,
+                "name": "skicenter",
+                "params": {
+                    "sectionName": "Skisenter",
+                    "pathname": "skicenter",
+                    "position": "center",
+                    "listPages": [
+                        {
+                            "sectionName": "Skiutleie",
+                            "pathname": "ski-rental"
+                        },
+                        {
+                            "sectionName": "Skiskole",
+                            "pathname": "ski-school"
+                        },
+                        { "sectionName": "Skishop", "pathname": "ski-shop" },
+                        {
+                            "sectionName": "Løypekart",
+                            "pathname": "track-maps"
+                        },
+                        {
+                            "sectionName": "Åpningstider",
+                            "pathname": "opening-hours"
+                        },
+                        { "sectionName": "Alpint", "pathname": "downhill" },
+                        {
+                            "sectionName": "Langrenn",
+                            "pathname": "cross-country"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 1,
+                "name": "food-and-beverage",
+                "params": {
+                    "sectionName": "mat & drikke",
+                    "pathname": "food-and-beverage",
+                    "position": "center",
+                    "listPages": [
+                        { "sectionName": "Kafe", "pathname": "cafe" },
+                        {
+                            "sectionName": "Bar og afterski",
+                            "pathname": "bar-and-afterski"
+                        },
+                        {
+                            "sectionName": "Restaurant",
+                            "pathname": "restaurant"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 2,
+                "name": "accommodation",
+                "params": {
+                    "sectionName": "overnatting",
+                    "pathname": "accommodation",
+                    "position": "center",
+                    "listPages": [
+                        {
+                            "sectionName": "Straand Hotell",
+                            "pathname": "straand-hotell"
+                        },
+                        {
+                            "sectionName": "Vrådal Booking",
+                            "pathname": "vradal-booking"
+                        },
+                        {
+                            "sectionName": "Vrådal Hyttegrend",
+                            "pathname": "vradal-hyttegrend"
+                        },
+                        { "sectionName": "Fiskebekk", "pathname": "fiskebekk" },
+                        {
+                            "sectionName": "Nedre Strand",
+                            "pathname": "nedre-strand"
+                        },
+                        {
+                            "sectionName": "Nisser Hyttesenter",
+                            "pathname": "nisser-hyttesenter"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 3,
+                "name": "activities",
+                "params": {
+                    "sectionName": "aktiviteter",
+                    "pathname": "activities",
+                    "position": "center",
+                    "listPages": [
+                        { "sectionName": "Strender", "pathname": "beaches" },
+                        {
+                            "sectionName": "Stisykling",
+                            "pathname": "trail-biking"
+                        },
+                        { "sectionName": "Fotturer", "pathname": "hiking" },
+                        { "sectionName": "Skatepark", "pathname": "skatepark" },
+                        { "sectionName": "Grillplass", "pathname": "barbecue" },
+                        { "sectionName": "Fisking", "pathname": "fishing" },
+                        { "sectionName": "Golfbane", "pathname": "golf" },
+                        { "sectionName": "Badstue", "pathname": "sauna" }
+                    ]
+                }
+            },
+            {
+                "id": 4,
+                "name": "cabin-and-plots",
+                "params": {
+                    "sectionName": "Hytter & tomter",
+                    "pathname": "cabin-and-plots",
+                    "listPages": null
+                }
+            }
+        ],
+        "side-part": [
+            {
+                "id": 0,
+                "name": "locale-switcher",
+                "params": {
+                    "sectionName": "ENG",
+                    "pathname": "en"
+                }
+            },
+            {
+                "id": 1,
+                "name": "booking",
+                "params": {
+                    "sectionName": "booking",
+                    "pathname": "booking",
+                    "position": "right",
+                    "listPages": [
+                        { "sectionName": "Skipass", "pathname": "skipass" },
+                        { "sectionName": "Badstue", "pathname": "sauna" }
+                    ]
+                }
+            }
+        ],
+        "sidebar-control": [
+            {
+                "id": 0,
+                "name": "locale-switcher",
+                "params": {
+                    "sectionName": "ENG",
+                    "pathname": "en"
+                }
+            },
+            {
+                "id": 1,
+                "name": "sidebar-control",
+                "params": {
+                    "sectionName": "MENY",
+                    "pathname": null
+                }
+            }
+        ],
+        "skicenter": {
+            "sectionName": "Skisenter",
+            "listPages": [
+                { "sectionName": "Skiutleie", "pathname": "ski-rental" },
+                { "sectionName": "Skiskole", "pathname": "ski-school" },
+                { "sectionName": "Skishop", "pathname": "ski-shop" },
+                { "sectionName": "Løypekart", "pathname": "track-maps" },
+                { "sectionName": "Åpningstider", "pathname": "opening-hours" },
+                { "sectionName": "Alpint", "pathname": "downhill" },
+                { "sectionName": "langrenn", "pathname": "cross-country" }
+            ]
+        },
+        "food-and-beverage": {
+            "sectionName": "mat & drikke",
+            "listPages": [
+                { "sectionName": "Kafe", "pathname": "cafe" },
+                {
+                    "sectionName": "Bar og afterski",
+                    "pathname": "bar-and-afterski"
+                },
+                { "sectionName": "Restaurant", "pathname": "restaurant" }
+            ]
+        },
+        "accommodation": {
+            "sectionName": "overnatting",
+            "listPages": [
+                {
+                    "sectionName": "Straand Hotell",
+                    "pathname": "straand-hotell"
+                },
+                {
+                    "sectionName": "Vrådal Booking",
+                    "pathname": "vradal-booking"
+                },
+                {
+                    "sectionName": "Vrådal Hyttegrend",
+                    "pathname": "vradal-hyttegrend"
+                },
+                { "sectionName": "Fiskebekk", "pathname": "fiskebekk" },
+                { "sectionName": "Nedre Strand", "pathname": "nedre-strand " },
+                {
+                    "sectionName": "Nisser Hyttesenter",
+                    "pathname": "nisser-hyttesenter"
+                }
+            ]
+        },
+        "activities": {
+            "sectionName": "aktiviteter",
+            "listPages": [
+                { "sectionName": "Strender", "pathname": "beaches" },
+                { "sectionName": "Stisykling", "pathname": "trail-biking" },
+                { "sectionName": "Fotturer", "pathname": "hiking" },
+                { "sectionName": "Skatepark", "pathname": "skatepark" },
+                { "sectionName": "Grillplass", "pathname": "barbecue" },
+                { "sectionName": "Fisking", "pathname": "fishing" },
+                { "sectionName": "Golfbane", "pathname": "golf" },
+                { "sectionName": "Badstue", "pathname": "sauna" }
+            ]
+        },
+        "cabin-and-plots": {
+            "sectionName": "Hytter & tomter"
+        },
+        "booking": {
+            "sectionName": "booking",
+            "listPages": [
+                { "sectionName": "Skipass", "pathname": "skipass" },
+                { "sectionName": "Badstue", "pathname": "sauna" }
+            ]
+        },
+        "mobileMenuNavigation": { "menu": "meny" }
+    },
+    "footer-part": {
+        "social-networks-section": {
+            "label": "Følg oss",
+            "social-networks": [
+                {
+                    "type": "instagram",
+                    "href": "https://www.instagram.com/vradalpanorama/"
+                },
+                {
+                    "type": "facebook",
+                    "href": "https://www.facebook.com/vraadalpanorama/"
+                }
+            ]
+        },
+        "email-subscription-section": {
+            "title": "Meld deg på vårt\u00A0nyhetsbrev",
+            "placeholder": "Skriv inn din e-postadresse"
+        },
+        "navigation-section": [
+            [
+                {
+                    "sectionName": "Vrådal Panorama",
+                    "type": "internal-link",
+                    "listPages": [
+                        {
+                            "sectionName": "Overnatting",
+                            "pathname": "accommodation"
+                        },
+                        {
+                            "sectionName": "Aktiviteter",
+                            "pathname": "activities"
+                        },
+                        {
+                            "sectionName": "Hytter & tomter",
+                            "pathname": "cabin-and-plots"
+                        },
+                        { "sectionName": "Karriere", "pathname": "careers" }
+                    ]
+                },
+                {
+                    "sectionName": "mat & drikke",
+                    "type": "internal-link",
+                    "listPages": [
+                        {
+                            "sectionName": "Kafe",
+                            "pathname": "food-and-beverage/cafe"
+                        },
+                        {
+                            "sectionName": "Bar og afterski",
+                            "pathname": "food-and-beverage/bar-and-afterski"
+                        },
+                        {
+                            "sectionName": "Restaurant",
+                            "pathname": "food-and-beverage/restaurant"
+                        }
+                    ]
+                }
+            ],
+            [
+                {
+                    "sectionName": "Skisenter",
+                    "type": "internal-link",
+                    "listPages": [
+                        {
+                            "sectionName": "Skiutleie",
+                            "pathname": "skicenter/ski-rental"
+                        },
+                        {
+                            "sectionName": "Skiskole",
+                            "pathname": "skicenter/ski-school"
+                        },
+                        {
+                            "sectionName": "Skishop",
+                            "pathname": "skicenter/ski-shop"
+                        },
+                        {
+                            "sectionName": "Løypekart",
+                            "pathname": "skicenter/track-maps"
+                        },
+                        {
+                            "sectionName": "Åpningstider",
+                            "pathname": "skicenter/opening-hours"
+                        },
+                        {
+                            "sectionName": "Alpint",
+                            "pathname": "skicenter/downhill"
+                        },
+                        {
+                            "sectionName": "langrenn",
+                            "pathname": "skicenter/cross-country"
+                        }
+                    ]
+                }
+            ],
+            [
+                {
+                    "sectionName": "kontakt",
+                    "type": "snackbar",
+                    "listPages": [
+                        {
+                            "sectionName": "Vesletjønnvegen 50, 3853 Vrådal, Norge",
+                            "copyToClipboard": "Vesletjønnvegen 50, 3853 Vrådal, Norge",
+                            "snackbar": {
+                                "icon-type": "copy-icon",
+                                "description": "Adresse\u00A0kopiert",
+                                "action": {
+                                    "type": "external-link",
+                                    "pathname": [
+                                        "https://goo.gl/maps/JSKRX7NWrnBVZYkQ7"
+                                    ],
+                                    "text": "Åpne I Google Maps"
+                                }
+                            }
+                        },
+                        {
+                            "sectionName": "+47 35 06 83 50",
+                            "copyToClipboard": "+4735068350",
+                            "snackbar": {
+                                "icon-type": "copy-icon",
+                                "description": "Telefonnummer kopiert",
+                                "action": {
+                                    "type": "external-link",
+                                    "pathname": ["tel:+4735068350"],
+                                    "text": "Åpne På Telefon app"
+                                }
+                            }
+                        },
+                        {
+                            "sectionName": "alpin@alpin.no",
+                            "copyToClipboard": "alpin@alpin.no",
+                            "snackbar": {
+                                "icon-type": "copy-icon",
+                                "description": "E-post kopiert",
+                                "action": {
+                                    "type": "external-link",
+                                    "pathname": ["mailto:alpin@alpin.no"],
+                                    "text": "Åpne på e-post app"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        ]
+    },
+    "footerNavigation": {
+        "skicenter": {
+            "sectionName": "Skisenter",
+            "listPages": [
+                {
+                    "sectionName": "Skiutleie",
+                    "pathname": "skicenter/ski-rental"
+                },
+                {
+                    "sectionName": "Skiskole",
+                    "pathname": "skicenter/ski-school"
+                },
+                { "sectionName": "Skishop", "pathname": "skicenter/ski-shop" },
+                {
+                    "sectionName": "Løypekart",
+                    "pathname": "skicenter/track-maps"
+                },
+                {
+                    "sectionName": "Åpningstider",
+                    "pathname": "skicenter/opening-hours"
+                },
+                { "sectionName": "Alpint", "pathname": "skicenter/downhill" },
+                {
+                    "sectionName": "langrenn",
+                    "pathname": "skicenter/cross-country"
+                }
+            ]
+        },
+        "vradal-panorama": {
+            "sectionName": "Vrådal Panorama",
+            "listPages": [
+                { "sectionName": "Overnatting", "pathname": "accommodation" },
+                { "sectionName": "Aktiviteter", "pathname": "activities" },
+                {
+                    "sectionName": "Hytter & tomter",
+                    "pathname": "cabin-and-plots"
+                },
+                { "sectionName": "Karriere", "pathname": "careers" }
+            ]
+        },
+        "food-and-beverage": {
+            "sectionName": "mat & drikke",
+            "listPages": [
+                { "sectionName": "Kafe", "pathname": "food-and-beverage/cafe" },
+                {
+                    "sectionName": "Bar og afterski",
+                    "pathname": "food-and-beverage/bar-and-afterski"
+                },
+                {
+                    "sectionName": "Restaurant",
+                    "pathname": "food-and-beverage/restaurant"
+                }
+            ]
+        },
+        "contacts": {
+            "sectionName": "kontakt",
+            "listPages": [
+                {
+                    "sectionName": "3853 Vrådal, Norge",
+                    "pathname": "geo:59.310245056485165,8.443061265620925"
+                },
+                {
+                    "sectionName": "+47 35 06 83 50",
+                    "pathname": "tel:+4735068350"
+                },
+                {
+                    "sectionName": "alpin@alpin.no",
+                    "pathname": "mailto:alpin@alpin.no"
+                }
+            ]
+        }
+    },
+    "footerSubsription": {
+        "title": "Meld deg på vårt\u00A0nyhetsbrev",
+        "placeholder": "Skriv inn din e-postadresse"
+    },
+    "footerSocialNetworks": {
+        "span": "Følg oss"
+    },
+    "widget": {
+        "serviceSection": {
+            "weather-top": "Topp 740m",
+            "weather-bottom": "Bunn 240m",
+            "weather-snow-depth": "Snødybde i\u00A0løype",
+            "elevators": "Åpne heiser",
+            "slopes": "Åpne bakker",
+            "webcam": "Åpne Webkamera",
+            "skiTrack1": "Sist\u00A0preppet 1.\u00A0Holtetjønn",
+            "skiTrack2": "Sist\u00A0preppet 2.\u00A0Stemnetten",
+            "skiTrack3": "Sist\u00A0preppet 3.\u00A0Skarstøylnetten",
+            "skiTrack4": "Sist\u00A0preppet 4.\u00A0Hægefjell"
+        },
+        "serviceTabsSection": {
+            "webcam": "Webkamera",
+            "ski-tracks": "Skiløyper"
+        },
+        "promotionSection": [
+            { "title": "accommodation", "description": "Overnatting Mer" },
+            { "title": "skipass", "description": "Skipass Book" }
+        ]
+    },
+    "accommodation": [
+        {
+            "slug": "vradal-booking",
+            "preview": {
+                "title": "Vrådal Booking",
+                "lead": "Her kan du leie store laftehytter og leiligheter i flott norsk fjellnatur. De fleste av hyttene og leilighetene ligger i gangavstand til Vrådal Panorama Skisenter og flere av byr på ski inn/ut til bakken.",
+                "link": "http://www.vraadalbooking.no/"
+            }
+        },
+        {
+            "slug": "straand-hotell",
+            "preview": {
+                "title": "Straand Hotel",
+                "lead": "Et av Telemarks fremste fullservice hotell. Straand Hotel i Vrådal oser av historie, unike fasiliteter, tradisjonsrik kokkekunst og en atmosfære du skal lete lenge etter.",
+                "link": "http://straand.no/"
+            }
+        },
+        {
+            "slug": "vradal-hyttegrend",
+            "preview": {
+                "title": "Vrådal Hyttegrend",
+                "lead": "Vrådal Hyttegrend har 16 utleiehytter av høy standard. Hyttene er designet for to familier og er fullt utstyrt for 8 personer, med dusj, wc, badstue (sauna), oppvaskmaskin, peisovn og kabel-TV. Solrik beliggenhet med flott utsikt og barnevennlige omgivelser.",
+                "link": "http://www.hyttegrend.no/"
+            }
+        },
+        {
+            "slug": "fiskebekk",
+            "preview": {
+                "title": "Fiskebekk",
+                "lead": "Fiskebekk tilbyr utleie av både små og store hytter med gratis trådløst internett. Hyttene har høy standard med oppvaskmaskin og sauna, og ligger naturskjønt med fin utsikt over innsjøen Vråvatn. Avstand til Vrådal Panorama Skisenter er 1,5 - 2,5 km.",
+                "link": "http://www.fiskebekk.net/"
+            }
+        },
+        {
+            "slug": "nedre-strand",
+            "preview": {
+                "title": "Nedre Strand",
+                "lead": "Nedre Strand hytteutleie og camping ligger fint til i sentrum i Vrådal og grenser til innsjøen Nisser. Hyttene ligger i åpent sydvendt terreng blant noen furutrær, og med særdeles fin utsikt over vannet og Vrådals idylliske natur med fjellene omkring.",
+                "link": "http://www.nedrestrand.no/"
+            }
+        },
+        {
+            "slug": "nisser-hyttesenter",
+            "preview": {
+                "title": "Nisser Hyttesenter",
+                "lead": "Hyttesenteret består av fem moderne hytter som ligger 20-60 meter fra den vakre innsjøen Nisser. Som gjest blir du vennlig mottatt av vertene Tove og Ketil Øy Man kommer lett ut i terrenget hvor man kan se elg og bever, vandre turer eller nyte naturen.",
+                "link": "http://hyttesenter.no/"
+            }
+        }
+    ],
+    "news": [
+        {
+            "slug": "badstue-med-panoramautsikt",
+            "title": "Badstue med panoramautsikt",
+            "date": "28 juli, 2023",
+            "text": "Nyt en avslappende sauna på toppen av Vrådal Panorama med utsikt utover vannet og flotte Tverrfjell.\nBook en badstuøkt her"
+        },
+        {
+            "slug": "alle-heiser-apne-2",
+            "title": "Takk for sesongen!",
+            "date": "10 april, 2023",
+            "text": "Tusen takk til alle våre gjester og ansatte for en fantastisk sesong og en kjempemorsom sesongavslutning. Vi sees snart igjen!"
+        },
+        {
+            "slug": "langrennsloyper-2",
+            "title": "Langrennsløyper",
+            "date": "8 april, 2023",
+            "text": "Alle rundløypene er kjørt opp. Nede finnes en 3 km lang tur rundt Holtetjønn. På toppen er det to fine løyper på 3 og 4 km. Det er også preppet til Skarstøylnetten og halveis til Hægefjell."
+        },
+        {
+            "slug": "hva-skjer-i-mars-2",
+            "title": "Hva skjer i påsken",
+            "date": "27 mars, 2023",
+            "text": "Program for påsken på Vrådal Panorama skisenter.\n\n1. april\n\n13:00 – Afterski med live musikk\n21:00 – Barkveld med live musikk\n\n2. april\n\n13:00 – Afterski i Panorama Bar"
+        }
+    ],
+    "newsSection": {
+        "title": "Hva skjer i Vrådal?",
+        "footer": {
+            "spanDescription": "Lær mer om livet I Vrådal Panorama, nye arrangementer og aktiviteter",
+            "button": "Flere Nyheter"
+        }
+    },
+    "indexPage": {
+        "mainTitle": "Sesongstart 2023",
+        "subTitleAction": "Gjør deg klar for vinteren",
+        "sections": [
+            {
+                "sectionSpan": "Skisenter",
+                "title": "Skiskole",
+                "lead": "Få mer kunnskap og skiglede ut av ferien! Våre dyktige skiinstruktører hjelper deg å forbedre skiferdighetene dine gjennom lek og læring, enten i gruppe eller alene. Du velger selv hva du vil fordype deg i, enten det er slalåm, telemark, snowboard eller langrenn.",
+                "slug": "skicenter/ski-school"
+            },
+            {
+                "sectionSpan": "Skisenter",
+                "title": "Skiutleie",
+                "lead": "I skiutleia har vi utstyr for store og små, nybegynnere og øvede.Her finner du et stort utvalg slalåmski, snowboard, langrenn- og telemarkski, sko, staver og barneseler. I tillegg kan du leie akebrett, snowracer og pulk. Du finner skiuleia i hovedbygget på venstre side.",
+                "slug": "skicenter/ski-rental"
+            }
+        ]
+    },
+    "ski-rentalPage": {
+        "mainTitle": "Skiutleie",
+        "subTitleAction": "Åpningstider: 15.12-26.01 09:30-16:00",
+        "content": {
+            "section1": {
+                "title": "I skiutleia har vi utstyr for store og små, nybegynnere og øvede.",
+                "lead": "Her finner du et stort utvalg slalåmski, snowboard, langrenn- og telemarkski, sko, staver og barneseler. I tillegg kan du leie akebrett, snowracer og pulk. Du finner skiuleia i hovedbygget på venstre side."
+            },
+            "section2": {
+                "title": "Hos oss får du utstyret etter ferdighet, slik at du får ski eller snowboard som passer deg best.",
+                "lead": "Det passer perfekt for deg som ikke har egne ski eller bare ønsker å prøve noe nytt. Husk at er påbudt med hjelm på Vrådal Panorama. Barn får låne hjelm gratis i skiuleia.",
+                "paragraph": "Vi hjelper deg gjerne med service. Skiverkstedet vårt tilbyr montering, sålebelegg, stansing og steinsliping."
+            },
+            "section3": {
+                "paragraph1": "Komplett utstyr er inkludert ski/snowboard, sko, evt. staver og hjelm.",
+                "paragraph2": "De minste skistøvlene vi har tilsvarer str. ?? i EUR, de største tilsvarer str. ?? i EUR. De minste snowboardstøvleve er EUR ?? og de største er i str. EUR ??",
+                "paragraph3": "Vi har ski i alle størrelser mellom 80 og 180 cm, og snowboard fra 100 til 170 cm."
+            },
+            "callToAction": {
+                "title": "Bestill skiutleie online",
+                "lead": "Spar tid og bestill utstyret online. Fristen for online-bestilling er 24 timer, slik at vi har tid til å klargjøre ditt utstyr. Etter denne fristen er det fortsatt mulig å leie utstyr direkte i skiutleia.",
+                "button": "Booking",
+                "linkToBook": "https://vraadal.skiperformance.com/no/"
+            }
+        }
+    },
+    "ski-schoolPage": {
+        "mainTitle": "Skiskole",
+        "subTitleAction": "Åpningstider: 15.12-26.01 09:30-16:00",
+        "content": {
+            "description": {
+                "title": "Få mer kunnskap og skiglede ut av ferien!",
+                "lead": "Våre dyktige skiinstruktører hjelper deg å forbedre skiferdighetene dine gjennom lek og læring, enten i gruppe eller alene. Du velger selv hva du vil fordype deg i, enten det er slalåm, telemark, snowboard eller langrenn.",
+                "paragraph": "Skiskolens møteplass finner du utenfor hovedbygget, se etter tilsvarende skilt. Husk å kjøpe heiskort og hente utstyret før undervisningen begynner. Dersom det er første gang du står på ski, anbefaler vi at du blir kjent med utstyrer og hvordan du spenner av og på skiene.",
+                "modal": {}
+            },
+            "groupAndPrivatLessons": {
+                "group": {
+                    "title": "Undervisning i grupper",
+                    "lead": "Lær deg å kjøre på ski sammen med andre på ditt nivå, det er en flott opplevelse å dele. Vi tilbyr ulike grupper gjennom sesongen. Vi har et ekstra godt utvalg i helger og ferier, likevel anbefaler vi å booke på forhånd for å sikre plass på ønsket kurs.",
+                    "pricing": {
+                        "prices": [
+                            {
+                                "category": {
+                                    "name": "ma-on",
+                                    "title": ["man-ons"]
+                                },
+                                "priceDescription": [
+                                    {
+                                        "price": "810",
+                                        "title": "3 dagers gruppekurs Mandag\u00A0til\u00A0onsdag",
+                                        "suTitle": "/pr. pers"
+                                    }
+                                ]
+                            },
+                            {
+                                "category": {
+                                    "name": "fr-sø",
+                                    "title": ["fre-søn"]
+                                },
+                                "priceDescription": [
+                                    {
+                                        "price": "810",
+                                        "title": "3 dagers gruppekurs Fredag\u00A0​​til\u00A0søndag",
+                                        "suTitle": "/pr. pers"
+                                    }
+                                ]
+                            }
+                        ],
+                        "info": {
+                            "span": "1 time pr. dag, 1 time = 45 minutter, min. 6\u00A0personer i\u00A0gruppe"
+                        }
+                    }
+                },
+                "privat": {
+                    "title": "Privat undervisning",
+                    "lead": "Her får du skreddersydd opplæring etter ditt nivå og ønsker med tett oppfølging av en av våre skiinstruktører.",
+                    "pricing": {
+                        "prices": [
+                            {
+                                "category": {
+                                    "name": "onePerson",
+                                    "title": ["1 person"]
+                                },
+                                "priceDescription": [
+                                    {
+                                        "price": "620",
+                                        "title": "1 time",
+                                        "suTitle": "/pr. pers"
+                                    },
+                                    {
+                                        "price": "910",
+                                        "title": "2 timer",
+                                        "suTitle": "/pr. pers"
+                                    },
+                                    {
+                                        "price": "1205",
+                                        "title": "3 timer",
+                                        "suTitle": "/pr. pers"
+                                    },
+                                    {
+                                        "price": "1515",
+                                        "title": "4 timer",
+                                        "suTitle": "/pr. pers"
+                                    }
+                                ]
+                            },
+                            {
+                                "category": {
+                                    "name": "twoPersons",
+                                    "title": ["2 persons"]
+                                },
+                                "priceDescription": [
+                                    {
+                                        "price": "425",
+                                        "title": "1 time",
+                                        "suTitle": "/pr. pers"
+                                    },
+                                    {
+                                        "price": "645",
+                                        "title": "2 timer",
+                                        "suTitle": "/pr. pers"
+                                    },
+                                    {
+                                        "price": "850",
+                                        "title": "3 timer",
+                                        "suTitle": "/pr. pers"
+                                    },
+                                    {
+                                        "price": "1075",
+                                        "title": "4 timer",
+                                        "suTitle": "/pr. pers"
+                                    }
+                                ]
+                            },
+                            {
+                                "category": {
+                                    "name": "threePerson",
+                                    "title": ["3 persons"]
+                                },
+                                "priceDescription": [
+                                    {
+                                        "price": "360",
+                                        "title": "1 time",
+                                        "suTitle": "/pr. pers"
+                                    },
+                                    {
+                                        "price": "570",
+                                        "title": "2 timer",
+                                        "suTitle": "/pr. pers"
+                                    },
+                                    {
+                                        "price": "760",
+                                        "title": "3 timer",
+                                        "suTitle": "/pr. pers"
+                                    },
+                                    {
+                                        "price": "975",
+                                        "title": "4 timer",
+                                        "suTitle": "/pr. pers"
+                                    }
+                                ]
+                            },
+                            {
+                                "category": {
+                                    "name": "fourOrFivePerson",
+                                    "title": ["4-5 persons"]
+                                },
+                                "priceDescription": [
+                                    {
+                                        "price": "325",
+                                        "title": "1 time",
+                                        "suTitle": "/pr. pers"
+                                    },
+                                    {
+                                        "price": "520",
+                                        "title": "2 timer",
+                                        "suTitle": "/pr. pers"
+                                    },
+                                    {
+                                        "price": "720",
+                                        "title": "3 timer",
+                                        "suTitle": "/pr. pers"
+                                    },
+                                    {
+                                        "price": "930",
+                                        "title": "4 timer",
+                                        "suTitle": "/pr. pers"
+                                    }
+                                ]
+                            }
+                        ],
+                        "info": {
+                            "span": "Alle priser er per person • 1 time er 45 minutter"
+                        }
+                    }
+                }
+            },
+            "levelsGroup": {
+                "title": "Skiskole for alle",
+                "lead": "Vi deler undervisningen inn i 4 nivåer etter ferdighet.",
+                "levels": {
+                    "blue": {
+                        "title": "Blå",
+                        "lead": "For deg som er nybegynner. Kurset krever ingen kunnskap om ski eller heiser. Gruppene lærer om sikkerhet, ploge, bremse og kjøre heis.",
+                        "type": "blue",
+                        "icon": {
+                            "type": "blue",
+                            "src": "./icons/blue.svg"
+                        }
+                    },
+                    "green": {
+                        "title": "Grønn",
+                        "lead": "For deg som har stått litt på ski før. Du kan kjøre heis, ploge og bremse. Gruppene kjører på grønne og blå løyper, og du vil lære å kjøre med parallelle ski, svinge og bruke stavene.",
+                        "type": "green",
+                        "icon": {
+                            "type": "green",
+                            "src": "./icons/green.svg"
+                        }
+                    },
+                    "red": {
+                        "title": "Rød",
+                        "lead": "For deg som er god på ski. Du kan kjøre med parallelle ski, bruke staver og kjører mestrer røde løyper. Gruppene lærer å kjøre mer teknisk riktig, større fart på skiene, samt store og små svinger.",
+                        "type": "red",
+                        "icon": {
+                            "type": "red",
+                            "src": "./icons/red.svg"
+                        }
+                    },
+                    "black": {
+                        "title": "Svart",
+                        "lead": "For de dyktige skikjørerne. Du kan kjøre ned svarte bakker. Gruppene jobber med å perfeksjonere teknikken med ulikt terreng og underlag, øker farten, prøver ut forskjellige svingeteknikker, og lærer å bruke kantene på skiene.",
+                        "type": "black",
+                        "icon": {
+                            "type": "black",
+                            "src": "./icons/black.svg"
+                        }
+                    }
+                }
+            },
+            "callToAction": {
+                "title": "Bestill skiskole online",
+                "lead": "Sikre deg en plass på forhånd og bestill skiskole på nett. Fristen for online-bestilling er 24 timer, slik at vi kan tilby best mulig service. ",
+                "button": "Booking",
+                "linkToBook": "https://vraadal.skiperformance.com/no/"
+            }
+        }
+    },
+    "modal": {
+        "toast": {
+            "copied-link": {
+                "label": "toast-link",
+                "title": null,
+                "lead": "kopiert til utklippstavlen",
+                "action": "toast-success"
+            }
+        },
+        "promotion": {},
+        "service": {}
+    }
+}

@@ -1,0 +1,12 @@
+.sectionContent {
+    display: flex;
+    width: 980px;
+    align-items: center;
+    color: inherit;
+    box-sizing: border-box;
+
+    &Cols {
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
