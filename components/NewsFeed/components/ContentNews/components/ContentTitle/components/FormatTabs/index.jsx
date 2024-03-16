@@ -10,8 +10,8 @@ import { useNewsFeedState } from "@/helpers/zustandStores/newsFeedState";
 
 const tabNames = {
     all: { en: "All", no: "Alle" },
-    news: { en: "News", no: "Nyhet" },
-    events: { en: "Events", no: "Hendelser" },
+    news: { en: "News", no: "Nyheter" },
+    events: { en: "Events", no: "Arrangement" },
 };
 
 const FormatTabs = () => {
