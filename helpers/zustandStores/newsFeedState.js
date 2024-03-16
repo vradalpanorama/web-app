@@ -47,7 +47,7 @@ const useNewsFeedState = create((set, get) => ({
             );
             if (response.error) {
                 set({
-                    status: "error on try",
+                    status: "error",
                 });
             } else {
                 set({
@@ -81,7 +81,7 @@ const useNewsFeedState = create((set, get) => ({
             }
         } catch (err) {
             set({
-                status: "error on err",
+                status: "error",
             });
         }
     },
