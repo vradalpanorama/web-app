@@ -1,6 +1,6 @@
 .action {
     display: flex;
-    padding: 1rem 3.5rem;
+    padding: 1rem 1rem;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
@@ -20,8 +20,8 @@
 
 @media only screen and (max-width: 1100px) and (min-width: 744px) {
     .action {
-        padding: 1rem 3.5rem;
-        font-size: 1.25rem;
+        // padding: 1rem 3.5rem;
+        font-size: 1.15rem;
     }
 }
 
@@ -29,9 +29,9 @@
     .action {
         // max-width: 50%;
         // min-width: 30%;
-        padding: 1rem 3.5rem;
+        // padding: 1rem 3.5rem;
         align-self: stretch;
         padding: 1rem 4rem;
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 }

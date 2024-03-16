@@ -1,11 +1,10 @@
 import React from "react";
 import { Container, Img } from "./components";
 
-const ImageArea = ({bannerImg}) => {
-    const {caption} = bannerImg
+const ImageArea = ({image}) => {
     return (
         <Container>
-            <Img alt={caption} src={bannerImg}/>
+            <Img img={image}/>
         </Container>
     );
 };
