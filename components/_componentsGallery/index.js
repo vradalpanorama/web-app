@@ -1,5 +1,0 @@
-export { default as Gallery } from './Gallery'
-export { default as GalleryContainer } from './GalleryContainer'
-export { default as GalleryDots } from './GalleryDots'
-export { default as GalleryNavigation } from './GalleryNavigation'
-export { default as GalleryMain } from './GalleryMain'
