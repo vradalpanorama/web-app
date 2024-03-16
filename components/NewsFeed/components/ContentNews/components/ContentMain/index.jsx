@@ -8,16 +8,13 @@ import style from "./index.module.scss";
 import {
     ContainerMain,
     ContainerNewsSecondary,
+    LoadingSpinner,
     NewsPreview,
 } from "./components";
 import { useNewsFeedState } from "@/helpers/zustandStores/newsFeedState";
 
 const ContentMain = ({ className }) => {
-    const [
-        status,
-        activeList,
-        countPreview,
-    ] = useNewsFeedState((state) => [
+    const [status, activeList, countPreview] = useNewsFeedState((state) => [
         state.status,
         state.activeList,
         state.countPreview,
@@ -29,19 +26,18 @@ const ContentMain = ({ className }) => {
                 <>
                     <NewsPreview newsObj={activeList[0]} mainType />
                     <ContainerNewsSecondary>
-                        {activeList
-                            .slice(1, countPreview)
-                            .map((news, key) => (
-                                <NewsPreview
-                                    key={key}
-                                    newsObj={news}
-                                    secondaryType
-                                />
-                            ))}
+                        {activeList.slice(1, countPreview).map((news, key) => (
+                            <NewsPreview
+                                key={key}
+                                newsObj={news}
+                                secondaryType
+                            />
+                        ))}
                     </ContainerNewsSecondary>
                 </>
             )}
-            {status !== "success" && <div>{status}</div>}
+            {status === "loading" && <LoadingSpinner />}
+            {/* {status === "error" && <Icon type={'error-icon'} />} */}
         </ContainerMain>
     );
 };
