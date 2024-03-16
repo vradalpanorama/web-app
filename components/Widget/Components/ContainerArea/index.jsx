@@ -18,8 +18,11 @@ const ContainerArea = ({ children, className }) => {
         threshold: 1,
     });
     useEffect(() => {
+        console.log(
+            inView
+        );
         setOnContent(inView);
-    }, [inView]);
+    }, [inView, setOnContent]);
     return (
          <div
             ref={ref}

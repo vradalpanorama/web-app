@@ -14,9 +14,9 @@ const components = {
                 imageBlock={props.value}
             />
         ),
-        // bannerBlock: (props) => (
-        //     <Banner className={style.contentPage} bannerData={props.value} />
-        // ),
+        bannerBlock: (props) => (
+            <Banner className={style.contentPage} bannerData={props.value} />
+        ),
         twoCellsBlock: (props) => (
             <TwoCells className={style.contentPage} data={props.value} />
         ),
