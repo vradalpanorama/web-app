@@ -14,7 +14,8 @@ import { useMatchMedia } from "@/hooks";
 const Banner = ({ className, bannerData }) => {
     const { isMobile, isTablet, isDesktop } = useMatchMedia();
     const [heightBanner, setHeightBanner] = useState(null);
-    const { bannerImg, bannerContent, action } = bannerData;
+    // const { bannerImg, bannerContent, action } = bannerData;
+    const { content, image } = bannerData;
 
     useEffect(() => {
         if (isDesktop) setHeightBanner("40rem");
@@ -22,23 +23,13 @@ const Banner = ({ className, bannerData }) => {
         if (isMobile) setHeightBanner("auto");
     }, [isMobile, isTablet, isDesktop]);
 
-    // const textObj = {
-    //     title: "Complete package",
-    //     lead: "Complete equipment is included ski / snowboard, shoes, if necessary. poles and helmet.",
-    //     action: "book",
-    // };
-
-    // const imgObj = {
-    //     img: pic,
-    //     alt: "image",
-    // };
     return (
         <SectionContent className={cl(className)}>
             {heightBanner && (
                 <Container>
                     <Content height={heightBanner}>
-                        <ImageArea bannerImg={bannerImg} />
-                        <TextArea bannerContent={bannerContent} />
+                        <ImageArea image={image} />
+                        <TextArea bannerContent={content} />
                     </Content>
                 </Container>
             )}
