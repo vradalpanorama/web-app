@@ -9,7 +9,7 @@ const TypeNews = ({ className, type}) => {
     const lang = useGetLang()
     const no = {
         "news": "nyheter",
-        "event": "arrangementer"
+        "event": "Arrangement"
     }
     return (
         <span
