@@ -1,3 +1,6 @@
+$offset: 187;
+$duration: 1.4s;
+
 .container {
     width: 100%;
     height: 35rem;
@@ -5,9 +8,6 @@
     align-items: center;
     justify-content: center;
 }
-
-$offset: 187;
-$duration: 1.4s;
 
 .spinner {
     animation: rotator $duration linear infinite;
@@ -26,29 +26,6 @@ $duration: 1.4s;
     stroke-dasharray: $offset;
     stroke-dashoffset: 0;
     transform-origin: center;
-    animation: dash $duration ease-in-out infinite,
-        colors ($duration * 4) ease-in-out infinite;
-}
-
-@keyframes colors {
-    0% {
-        stroke: #f37c29;
-    }
-    20% {
-        stroke: #edaf2d;
-    }
-    40% {
-        stroke: #83bb37;
-    }
-    60% {
-        stroke: #3db7eb;
-    }
-    80% {
-        stroke: #a39d2b;
-    }
-    100% {
-        stroke: #fbd131;
-    }
 }
 
 @keyframes dash {
@@ -62,5 +39,83 @@ $duration: 1.4s;
     100% {
         stroke-dashoffset: $offset;
         transform: rotate(450deg);
+    }
+}
+
+.colors_1 {
+    animation: dash $duration ease-in-out infinite,
+        colors_1 ($duration * 4) ease-in-out infinite;
+}
+
+@keyframes colors_1 {
+    0% {
+        stroke: #a39d2b;
+    }
+    20% {
+        stroke: #fbd131;
+    }
+    40% {
+        stroke: #edaf2d;
+    }
+    60% {
+        stroke: #f37c29;
+    }
+    80% {
+        stroke: #3db7eb;
+    }
+    100% {
+        stroke: #83bb37;
+    }
+}
+
+.colors_2 {
+    animation: dash $duration ease-in-out infinite,
+        colors_2 ($duration * 4) ease-in-out infinite;
+}
+
+@keyframes colors_2 {
+    0% {
+        stroke: var(--200-blue);
+    }
+    20% {
+        stroke: var(--400-blue);
+    }
+    40% {
+        stroke: var(--500-blue);
+    }
+    60% {
+        stroke: var(--400-blue);
+    }
+    80% {
+        stroke: var(--300-blue);
+    }
+    100% {
+        stroke: var(--100-blue);
+    }
+}
+
+.colors_3 {
+    animation: dash $duration ease-in-out infinite,
+        colors_3 ($duration * 4) ease-in-out infinite;
+}
+
+@keyframes colors_3 {
+    0% {
+        stroke: var(--300-red);
+    }
+    20% {
+        stroke: var(--500-red);
+    }
+    40% {
+        stroke: var(--300-orange);
+    }
+    60% {
+        stroke: var(--500-orange);
+    }
+    80% {
+        stroke: var(--300-green);
+    }
+    100% {
+        stroke: var(--500-green);
     }
 }

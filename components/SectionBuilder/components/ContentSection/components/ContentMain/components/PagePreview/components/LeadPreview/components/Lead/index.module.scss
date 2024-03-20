@@ -3,17 +3,5 @@
     letter-spacing: 0.25px;
     font-weight: 400;
     line-height: 150%;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
     color: var(--text-black);
-
-    &Main {
-        -webkit-line-clamp: 4;
-    }
-    &Secondary {
-        -webkit-line-clamp: 2;
-        min-height: 4rem;
-    }
 }
