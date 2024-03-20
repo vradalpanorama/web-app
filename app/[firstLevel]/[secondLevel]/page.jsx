@@ -31,6 +31,33 @@ const sanityFetch = async ({ params }) => {
     return response;
 };
 
+export async function generateStaticParams() {
+    const response = await apiFetch({
+        groq: `
+        {
+            "pages": *[
+                _type == 'page' && 
+                settings.pathname.isSectionPage == true &&
+                !(_id in path("drafts.**"))
+            ]{
+                settings{
+                     pathname{
+                        ...,
+                        section->{
+                            slug
+                        }
+                    }
+                }
+            }
+        }`,
+    });
+
+    return response["result"]["pages"].map((page) => ({
+        firstLevel: page.settings.pathname.section.slug.current,
+        secondLevel: page.settings.pathname.slug.current,
+    }));
+}
+
 export async function generateMetadata({ params }) {
     const response = await sanityFetch({ params });
 
