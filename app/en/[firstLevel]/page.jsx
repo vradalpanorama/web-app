@@ -55,6 +55,45 @@ const sanityFetch = async ({ params }) => {
     return response;
 };
 
+export async function generateStaticParams() {
+    const response = await apiFetch({
+        groq: `
+        {
+            "pages": *[
+                _type in ['news', 'page', 'section'] && 
+                (
+                    (settings.pathname.isSectionPage == false && _type == 'page') ||
+                    (_type == 'section') ||
+                    (_type == 'news')
+                ) &&
+                !(_id in path("drafts.**"))
+            ]{
+                ...
+            }
+        }`,
+    });
+    const pages = response["result"]["pages"];
+
+    return pages.map((page) => {
+        const { _type } = page;
+
+        switch (_type) {
+            case "page":
+                return {
+                    firstLevel: page.settings.pathname.slug.current,
+                };
+            case "section":
+                return {
+                    firstLevel: page.slug.current,
+                };
+            case "news":
+                return {
+                    firstLevel: page.settings.slug.current,
+                };
+        }
+    });
+}
+
 export async function generateMetadata({ params }) {
     const response = await sanityFetch({ params });
 
