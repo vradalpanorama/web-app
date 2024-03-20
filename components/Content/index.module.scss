@@ -1,11 +1,15 @@
 .content {
-    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: inherit;
+    gap: 1.25rem;
+    margin: 3rem 0;
+
     p {
         font-size: 1.5rem;
         font-weight: 400;
         line-height: 150%;
-        margin-bottom: 1.4211em;
-        margin-top: 1.25rem;
     }
 
     em {
@@ -13,7 +17,7 @@
     }
 
     h2 {
-        margin-top: 2rem;
+        margin-top: 0.75rem;
         font-size: 4.75rem;
         font-weight: 600;
         letter-spacing: 0.02em;
@@ -21,7 +25,7 @@
     }
 
     h3 {
-        margin-top: 2rem;
+        margin-top: 0.75rem;
         font-size: 4rem;
         font-weight: 600;
         letter-spacing: 0.011em;
@@ -29,7 +33,7 @@
     }
 
     h5 {
-        margin-top: 2rem;
+        margin-top: 0.75rem;
         font-size: 2rem;
         font-weight: 600;
         letter-spacing: 0.011em;
@@ -54,7 +58,7 @@
     h3,
     h5,
     blockquote {
-        margin-top: calc(3rem - 1.25rem);
+        // margin-top: calc(3rem - 1.25rem);
         width: var(--width-content__desktop);
         box-sizing: border-box;
     }
@@ -71,7 +75,7 @@
 }
 
 .contentPage {
-    margin-top: calc(3rem - 1.25rem);
+    // margin-top: calc(3rem - 1.25rem);
     width: var(--width-content__desktop);
     box-sizing: border-box;
 }
@@ -84,7 +88,7 @@
         h3,
         h5,
         blockquote {
-            margin-top: calc(3rem - 1.25rem);
+            // margin-top: calc(3rem - 1.25rem);
             width: var(--width-content__tablet);
         }
     }
