@@ -1,12 +1,10 @@
 import { apiFetch } from "@/helpers/sanity/apiFetch";
 import { notFound, redirect } from "next/navigation";
-export const metadata = {
-    robots: {
-        index: false,
-        follow: false,
-        nocache: true,
-    },
-};
+
+import cl from "classnames";
+import style from "./page.module.scss";
+
+
 
 export default async function RedirectPage({ searchParams }) {
     const response = await apiFetch({
@@ -19,10 +17,6 @@ export default async function RedirectPage({ searchParams }) {
     `,
     });
     const externalLink = response["result"]["externalLink"];
-    if (externalLink) {
-        redirect(externalLink["linkURL"]);
-    } else {
-        notFound();
-    }
-    return <div>Redirect</div>;
+    if (externalLink) redirect(externalLink["linkURL"]);
+    else notFound();
 }
