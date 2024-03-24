@@ -62,7 +62,7 @@
     }
 
     &404 {
-        background: url(../public/icons/status-code/404.svg) no-repeat center
+        background: url(../../public/icons/status-code/404.svg) no-repeat center
             center;
         width: 60rem;
         height: 20rem;
@@ -101,7 +101,8 @@
             height: 1.25rem;
         }
     }
-    p, a {
+    p,
+    a {
         color: #ffffff;
         font-size: 1.75rem;
         font-style: normal;
