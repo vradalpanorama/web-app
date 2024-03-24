@@ -2,7 +2,7 @@ import { Poppins } from "next/font/google";
 
 import "@/styles/reset.scss";
 import "@/styles/global.scss";
-import favicon from "@/app/favicon.svg";
+import favicon from "@/app/(web-app)/favicon.svg";
 
 import NextTopLoader from "nextjs-toploader";
 
