@@ -6,13 +6,16 @@
     box-sizing: border-box;
     // border: solid 2px rgba(28, 30, 32, 0.1);
     // background: linear-gradient(180deg, #f5fbff 0%, #e5f6ff 100%);
-    color: inherit;
-    border: solid 1px rgba(28, 30, 32, 0.25);
-    border-radius: 2rem;
-    transition: all .3s;
+    background: var(--500-blue);
+    color: var(--100-blue);
+    // border: solid 1px rgba(28, 30, 32, 0.25);
+    border-radius: calc(var(--border-radius) + 0.5rem);
+    transition: all 0.3s;
 
-    &:hover, &:active {
-        border: solid 1px transparent;
-        background: transparent;
+    &:hover,
+    &:active {
+        // border: solid 1px transparent;
+        color: var(--000-blue);
+        background: var(--600-blue);
     }
 }
