@@ -1,0 +1,10 @@
+.arrow {
+    // color: var(--text-black);
+    height: .9rem;
+    width: auto;
+    &Link {
+        transform: rotate(-45deg);
+        padding-bottom: 0.25rem;
+        margin-left: 0.15rem;
+    }
+}
