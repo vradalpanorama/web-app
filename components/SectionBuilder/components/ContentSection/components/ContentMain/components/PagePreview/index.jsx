@@ -6,11 +6,11 @@ import cl from "classnames";
 import style from "./index.module.scss";
 
 import {
+    CaptionPreview,
     ContainerPreview,
     HeaderPreview,
     ImagePreview,
     LeadPreview,
-    ReadMorePreview,
 } from "./components";
 import { useGetLang, useLinkGeneration } from "@/hooks";
 import Link from "next/link";
@@ -24,9 +24,7 @@ const PagePreview = ({
     secondaryType = false,
 }) => {
     const getLink = useLinkGeneration();
-
-    // const { typePub, datePub, slug, newsCover, newsContent } = pageObj;
-    // const { settings, header } = pageObj;
+    
     const { _type } = pageObj;
 
     let pathname, imagePreview, titlePreview, leadPreview;
@@ -75,7 +73,11 @@ const PagePreview = ({
                 {leadPreview && (
                     <LeadPreview previewType={previewType} lead={leadPreview} />
                 )}
-                <ReadMorePreview lang={lang} previewType={previewType} />
+                <CaptionPreview
+                    lang={lang}
+                    previewType={previewType}
+                    typePage={_type}
+                />
             </ContainerPreview>
         </Link>
     );

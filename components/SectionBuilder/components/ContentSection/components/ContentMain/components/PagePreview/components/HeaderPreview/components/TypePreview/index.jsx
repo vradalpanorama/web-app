@@ -7,13 +7,13 @@ import style from "./index.module.scss";
 const TypePreview = ({ className, type, lang }) => {
     const no = {
         page: "side",
-        modal: "modal",
-        externalLink: "Link",
+        modal: "modal vindu",
+        externalLink: "link",
     };
     const en = {
         page: "page",
-        modal: "modal",
-        externalLink: "Link",
+        modal: "modal window",
+        externalLink: "link",
     };
     return (
         <span className={cl(className, style.typePreview)}>
