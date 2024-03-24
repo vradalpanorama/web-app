@@ -1,0 +1,86 @@
+body.containerBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(225deg, #f5fbff 0%, #addbf6 100%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.redirect {
+    font-weight: 600;
+    font-size: 4rem;
+    color: var(--600-blue);
+}
+
+.skiman {
+    width: 65%;
+    height: auto;
+}
+
+.loading {
+    &Container {
+        position: relative;
+        width: 30%;
+        height: 0.5rem;
+        background-color: var(--100-blue);
+        border-radius: 20rem;
+        overflow: hidden;
+    }
+    &Line {
+        position: absolute;
+        width: 30%;
+        height: 0.5rem;
+        background-color: var(--300-blue);
+        border-radius: 20rem;
+        animation: move-line 2.5s ease-in-out infinite;
+    }
+}
+
+@keyframes move-line {
+    0% {
+        left: -10%;
+        width: 30%;
+    }
+    25% {
+        width: 80%;
+    }
+    50% {
+        left: calc(100% - 10%);
+        width: 30%;
+    }
+    75% {
+        width: 30%;
+    }
+    100% {
+        left: -10%;
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 743px) {
+    .container {
+        gap: 1.5rem;
+    }
+    .redirect {
+        font-size: 2.75rem;
+    }
+    .skiman {
+        width: 85%;
+    }
+    .loading {
+        &Container {
+            width: 50%;
+        }
+    }
+}
