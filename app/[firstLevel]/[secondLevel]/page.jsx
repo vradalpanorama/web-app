@@ -63,6 +63,8 @@ export async function generateMetadata({ params }) {
 
     const page = response["result"]["page"];
 
+    if (!page) return null;
+
     return {
         title: page.settings.seoAndSocial.title["no"],
         description: page.settings.seoAndSocial?.description?.no ?? "",

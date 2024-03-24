@@ -99,6 +99,8 @@ export async function generateMetadata({ params }) {
 
     const firstLevelPage = response["result"]["firstLevelPage"];
 
+    if (!firstLevelPage) return null;
+
     const { _type } = firstLevelPage;
 
     switch (_type) {
